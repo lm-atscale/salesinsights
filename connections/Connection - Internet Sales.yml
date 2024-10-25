@@ -2,5 +2,5 @@ unique_name: Connection - Internet Sales
 label: Connection - Internet Sales
 object_type: connection
 as_connection: Snowflake
-database: as_adventure
+database: ATSCALE_TUTORIALS
 schema: as_adventure
