@@ -1,0 +1,6 @@
+version: 1
+unique_name: Sales Insights
+object_type: catalog
+label: Sales Insights
+aggressive_agg_promotion: false
+build_speculative_aggs: true
