@@ -1,0 +1,6 @@
+unique_name: con_atscale_sample_data_as_adventure
+object_type: connection
+label: con_atscale_sample_data_as_adventure
+as_connection: Databricks
+database: atscale_sample_data
+schema: as_adventure
