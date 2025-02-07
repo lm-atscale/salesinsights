@@ -1,6 +1,0 @@
-unique_name: con_atscale_demo
-object_type: connection
-label: con_atscale_demo
-as_connection: Databricks
-database: atscale
-schema: demo
