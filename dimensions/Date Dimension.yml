@@ -276,9 +276,8 @@ hierarchies:
         parallel_periods:
           - level: customyear
             key_columns:
-              - name: reporting_quarter_lykey
-                data_type: datetime
-
+              - rpt_quarter_lykey
+        
         secondary_attributes:
 
           - unique_name: d_Custom_Quarter_Of_Year
@@ -293,8 +292,7 @@ hierarchies:
         parallel_periods:
           - level: customyear
             key_columns:
-              - name: reporting_month_lykey
-                data_type: datetime
+              - reporting_month_lykey
 
         secondary_attributes:
 
@@ -329,8 +327,8 @@ hierarchies:
         parallel_periods:
           - level: customyear
             key_columns:
-              - name: reporting_week_lykey
-                data_type: datetime
+              - reporting_week_lykey
+        
 
         secondary_attributes:
 
@@ -356,8 +354,7 @@ hierarchies:
         parallel_periods:
           - level: customyear
             key_columns:
-              - name: reporting_day_lykey
-                data_type: datetime
+              - reporting_day_lykey
 
         secondary_attributes:
 
