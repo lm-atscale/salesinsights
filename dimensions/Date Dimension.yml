@@ -276,7 +276,7 @@ hierarchies:
         parallel_periods:
           - level: customyear
             key_columns:
-              - rpt_quarter_lykey
+              - reporting_quarter_lykey
         
         secondary_attributes:
 
