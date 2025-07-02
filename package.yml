@@ -1,6 +1,0 @@
-version: 1
-packages:
-  - version: commit:3242fdbb58366b7866eedeadb12e8f0fe0dcd2b1
-    name: Environment_Variables
-    url: https://github.com/lm-atscale/env_files.git
-    branch: main
