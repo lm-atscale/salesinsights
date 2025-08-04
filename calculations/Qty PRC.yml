@@ -1,0 +1,7 @@
+unique_name: Qty PRC
+object_type: metric_calc
+label: Qty PRC
+expression: >-
+  IIF([Measures].[salesamount1] > 0, ([Measures].[salesamount1]/
+  [Measures].[orderquantity1]), NULL)
+is_hidden: false

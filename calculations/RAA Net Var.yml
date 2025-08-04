@@ -1,0 +1,13 @@
+unique_name: RAA Net Var
+object_type: metric_calc
+label: RAA Net Var
+expression: |-
+  CASE 
+    WHEN [Measures].[lastproductunitprice] < 0 THEN 3
+    WHEN [Measures].[lastproductunitprice] >= 0 AND [Measures].[lastproductunitprice] <= 0.1 THEN 6
+    WHEN [Measures].[lastproductunitprice] > 0.1 AND [Measures].[lastproductunitprice] <= 0.2 THEN 9
+    WHEN [Measures].[lastproductunitprice] > 0.2 AND [Measures].[lastproductunitprice] <= 0.3 THEN 12
+    WHEN [Measures].[lastproductunitprice] > 0.3 THEN 15
+  ELSe NULL
+  END
+is_hidden: false

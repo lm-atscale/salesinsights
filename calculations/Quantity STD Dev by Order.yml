@@ -1,0 +1,7 @@
+unique_name: Quantity STD Dev by Order
+object_type: metric_calc
+label: Quantity STD Dev by Order
+expression: >-
+  ([Order Dimension].[Order Dimension].CurrentMember, [Measures].[Order Quantity
+  - STDD])
+is_hidden: false
