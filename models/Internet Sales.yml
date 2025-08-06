@@ -417,3 +417,14 @@ relationships:
       dimension: Customer Dimension
       level: Customer Name
 visible: true
+
+perspectives:
+  - unique_name: internet_sales_no_pii
+    dimensions:
+      - hierarchies:
+          - level: Customer Name
+            name: Customer Hierarchy
+        name: Customer Dimension 
+        secondaryattributes:
+          - d_firstname
+          - d_lastname
