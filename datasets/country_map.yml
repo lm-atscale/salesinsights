@@ -1,0 +1,10 @@
+unique_name: country_map
+object_type: dataset
+label: country_map
+columns:
+  - name: country
+    data_type: string
+  - name: username
+    data_type: string
+connection_id: con_atscale_security_dimensions
+table: country_map
