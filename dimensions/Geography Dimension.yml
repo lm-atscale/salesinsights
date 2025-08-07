@@ -117,4 +117,14 @@ relationships:
     to:
       row_security: Country Security
     type: embedded
+  - unique_name: dim_geo_postalcode_country_to_Country Security
+    from:
+      dataset: dim_geo_postalcode
+      hierarchy: Geography Zip
+      join_columns:
+        - country
+      level: GeoKeyZip
+    to:
+      row_security: Country Security
+    type: embedded
 type: standard

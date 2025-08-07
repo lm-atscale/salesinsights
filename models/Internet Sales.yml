@@ -331,10 +331,21 @@ metrics:
   - unique_name: Qty PRC
     folder: DOH Calcs
   - unique_name: Order Quantity - STDD
+    folder: DOH Calcs
   - unique_name: Quantity STD Dev by Order
     folder: DOH Calcs
   - unique_name: RAA Net Var
     folder: DOH Calcs
+perspectives:
+  - unique_name: internet_sales_no_pii
+    dimensions:
+      - name: Customer Dimension
+        hierarchies:
+          - name: Customer Hierarchy
+            level: Customer Name
+        secondaryattributes:
+          - d_firstname
+          - d_lastname
 relationships:
   - unique_name: factinternetsales_Date_Dimension_Order
     from:
@@ -417,14 +428,3 @@ relationships:
       dimension: Customer Dimension
       level: Customer Name
 visible: true
-
-perspectives:
-  - unique_name: internet_sales_no_pii
-    dimensions:
-      - hierarchies:
-          - level: Customer Name
-            name: Customer Hierarchy
-        name: Customer Dimension 
-        secondaryattributes:
-          - d_firstname
-          - d_lastname
