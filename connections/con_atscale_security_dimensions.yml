@@ -1,6 +1,6 @@
 unique_name: con_atscale_security_dimensions
 object_type: connection
 label: con_atscale_security_dimensions
-as_connection: Databricks
-database: atscale
-schema: security_dimensions
+as_connection: {{CONNECTION_SECDIM}}
+database: {{DB_NAME_SECDIM}}
+schema: {{DB_SCHEMA_SECDIM}}
