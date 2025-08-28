@@ -7,4 +7,4 @@ columns:
   - name: username
     data_type: string
 connection_id: con_atscale_security_dimensions
-table: country_map
+table: lm_country_map
