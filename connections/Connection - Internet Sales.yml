@@ -1,6 +1,6 @@
 unique_name: Connection - Internet Sales
 label: Connection - Internet Sales
 object_type: connection
-as_connection: {{CONNECTION}}
-database: {{DB_NAME}}
-schema: {{DB_SCHEMA}}
+as_connection: ${CONNECTION}
+database: ${DB_NAME}
+schema: ${DB_SCHEMA}
