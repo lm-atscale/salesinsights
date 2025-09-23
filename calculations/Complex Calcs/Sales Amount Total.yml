@@ -1,0 +1,5 @@
+unique_name: Sales Amount Total
+object_type: metric_calc
+label: Sales Amount Total
+description: Sales Amount Total
+expression: ALLMEMBER([Measures].[salesamount1])

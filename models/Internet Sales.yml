@@ -326,16 +326,12 @@ metrics:
     folder: Time Relative
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
-  - unique_name: Pop_
-    folder: DOH Calcs
-  - unique_name: Qty PRC
-    folder: DOH Calcs
-  - unique_name: Order Quantity - STDD
-    folder: DOH Calcs
-  - unique_name: Quantity STD Dev by Order
-    folder: DOH Calcs
-  - unique_name: RAA Net Var
-    folder: DOH Calcs
+  - unique_name: Sales AMT Percent of Total
+    folder: Complex Calcs
+  - unique_name: Sales Amount Total
+    folder: Complex Calcs
+  - unique_name: Tupple Expression Ratio
+    folder: Complex Calcs
 perspectives:
   - unique_name: internet_sales_no_pii
     dimensions:

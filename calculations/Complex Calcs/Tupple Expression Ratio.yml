@@ -1,0 +1,19 @@
+unique_name: Tupple Expression Ratio
+object_type: metric_calc
+label: Tupple Expression Ratio
+description: Tupple Expression Ratio
+expression: |-
+  100 * DIVIDE(
+    (
+      [Measures].[salesamount1],
+      [Color Dimension].[Color].[Color].&[Black],
+      [Weight].[Weight].[Weight].&[14.77],
+      [Size Dimension].[Size].[Size].&[M]
+    ),
+    (
+      [Measures].[orderquantity1],
+      [Color Dimension].[Color].[Color].&[Black],
+      [Weight].[Weight].[Weight].&[14.77],
+      [Size Dimension].[Size].[Size].&[M]
+    )
+  )

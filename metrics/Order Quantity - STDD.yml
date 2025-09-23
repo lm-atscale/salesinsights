@@ -1,6 +1,0 @@
-unique_name: Order Quantity - STDD
-object_type: metric
-label: Order Quantity - STDD
-calculation_method: stddev_pop
-column: orderquantity
-dataset: factinternetsales

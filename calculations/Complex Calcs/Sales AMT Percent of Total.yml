@@ -1,0 +1,13 @@
+unique_name: Sales AMT Percent of Total
+object_type: metric_calc
+label: Sales AMT Percent of Total
+description: Sales AMT Percent of Total
+expression: |-
+  IIF(
+    ISEMPTY([Measures].[salesamount1]) OR [Measures].[salesamount1] = 0,
+    NULL,
+    100 * DIVIDE(
+      [Measures].[salesamount1],
+      ALLMEMBER([Measures].[salesamount1])
+    )
+  )

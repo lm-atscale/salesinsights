@@ -1,7 +1,0 @@
-unique_name: Pop_
-object_type: metric_calc
-label: Pop_
-expression: >-
-  ALLMEMBEREXCEPT([Measures].[soldproductNDC1], {[Order Date Dimension].[Order
-  Date Month Hierarchy]})
-is_hidden: false
