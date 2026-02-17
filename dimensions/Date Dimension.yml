@@ -19,6 +19,54 @@ calculation_groups:
             [Measures].CurrentMember
           )
         use_input_metric_format: true
+      - unique_name: Date Month Hierarchy Current
+        expression: ([Date Dimension].CurrentMember, [Measures].currentMember)
+        format: general number
+      - unique_name: Date Month Hierarchy Current vs Last Year
+        expression: >-
+          (([Date Dimension].CurrentMember, [Measures].currentMember) -
+          (ParallelPeriod([Date Dimension].TimeYear, 1, [Date
+          Dimension].CurrentMember), [Measures].currentMember ))
+        format: fixed
+      - unique_name: Date Month Hierarchy Current vs Last Year Pct
+        expression: >-
+          (([Date Dimension].CurrentMember, [Measures].currentMember) - 
+          (ParallelPeriod([Date Dimension].TimeYear, 1, [Date
+          Dimension].CurrentMember), [Measures].currentMember )) /
+          (ParallelPeriod([Date Dimension].TimeYear, 1, [Date
+          Dimension].CurrentMember), [Measures].currentMember)
+        format: percent
+      - unique_name: Date Month Hierarchy Month Moving Average 3 Month
+        expression: >-
+          Avg(ParallelPeriod([Date Dimension].TimeMonth, 2, [Date
+          Dimension].CurrentMember):[Date Dimension].CurrentMember,
+          [Measures].currentMember)
+        format: standard
+      - unique_name: Date Month Hierarchy Month to Date
+        expression: >-
+          Aggregate(PeriodsToDate([Date Dimension].[Date Month
+          Hierarchy].[Month1], [Date Dimension].[Date Month
+          Hierarchy].CurrentMember),[Measures].currentMember)
+        format: general number
+      - unique_name: Date Month Hierarchy Moving Average 5 Period
+        expression: >-
+          Avg([Date Dimension].[Date Month Hierarchy].CurrentMember.Lag(4):[Date
+          Dimension].[Date Month Hierarchy].CurrentMember,
+          [Measures].currentMember)
+        format: scientific
+      - unique_name: Date Month Hierarchy Pct of Parent
+        expression: >-
+          ([Date Dimension].[Date Month Hierarchy].CurrentMember,
+          [Measures].currentMember) / ([Date Dimension].[Date Month
+          Hierarchy].CurrentMember.parent, [Measures].currentMember)
+        format: percent
+      - unique_name: Date Month Hierarchy Pct of Total
+        expression: >-
+          ([Date Dimension].[Date Month Hierarchy].CurrentMember,
+          [Measures].currentMember) / ([Date Dimension].[Date Month
+          Hierarchy].[All], [Measures].currentMember)
+        format: percent
+    folder: Calculated Groups
 hierarchies:
   - unique_name: Date Month Hierarchy
     label: Date Month Hierarchy
