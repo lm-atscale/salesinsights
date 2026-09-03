@@ -1,0 +1,18 @@
+unique_name: Color2
+object_type: dimension
+label: Color2
+hierarchies:
+  - unique_name: Color2_
+    label: Color2
+    levels:
+      - unique_name: Color2
+is_degenerate: true
+level_attributes:
+  - unique_name: Color2
+    label: Color2
+    contains_unique_names: false
+    dataset: factinternetsales
+    key_columns:
+      - Color2
+    name_column: Color2
+type: standard

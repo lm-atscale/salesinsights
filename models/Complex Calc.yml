@@ -3,7 +3,7 @@ object_type: model
 label: Complex Calc
 dimensions:
   - Color Dimension
-  - Color Dim 2
+  - Color2
 metrics:
   - unique_name: Sales Amount - SUM
   - unique_name: Black and Red
