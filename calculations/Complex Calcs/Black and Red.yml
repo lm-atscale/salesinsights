@@ -3,4 +3,4 @@ object_type: metric_calc
 label: Black and Red
 expression: |-
   ([Color Dimension].[Color].[Color].&[Black],
-  [Color Dimension].[Color].[Color].&[Red], [Measures].[Sales Amount - SUM])
+  [Color Dim 2].[Color].[Color].&[Red], [Measures].[Sales Amount - SUM])
