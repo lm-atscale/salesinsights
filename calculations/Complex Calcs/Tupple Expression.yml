@@ -3,7 +3,7 @@ object_type: metric_calc
 label: Tupple Expression
 description: Tupple Expression
 expression: |-
-  [Measures].[salesamount1],
+  ([Measures].[salesamount1],
   [Color Dimension].[Color].[Color].&[Black],
   [Weight].[Weight].[Weight].&[14.77],
-  [Size Dimension].[Size].[Size].&[M]
+  [Size Dimension].[Size].[Size].&[M])
