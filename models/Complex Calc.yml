@@ -5,4 +5,5 @@ dimensions:
   - Color Dimension
 metrics:
   - unique_name: Sales Amount - SUM
+  - unique_name: Black and Red
 relationships: []

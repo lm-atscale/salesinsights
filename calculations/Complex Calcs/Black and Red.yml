@@ -1,0 +1,6 @@
+unique_name: Black and Red
+object_type: metric_calc
+label: Black and Red
+expression: |-
+  ([Color Dimension].[Color].&[Black],
+  [Color Dimension].[Color].&[Red], [Measures].[Sales Amount - SUM])
