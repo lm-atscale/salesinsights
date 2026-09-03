@@ -1,0 +1,4 @@
+unique_name: Black 2
+object_type: metric_calc
+label: Black
+expression: ([Color2].[Color2_].[Color2].&[Black], [Measures].[Sales Amount - SUM])

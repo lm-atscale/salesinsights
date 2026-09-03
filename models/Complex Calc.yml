@@ -8,4 +8,5 @@ metrics:
   - unique_name: Sales Amount - SUM
   - unique_name: Black and Red
   - unique_name: Black
+  - unique_name: Red
 relationships: []
