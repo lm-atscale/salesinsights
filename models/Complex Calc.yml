@@ -1,0 +1,8 @@
+unique_name: Complex Calc
+object_type: model
+label: Complex Calc
+dimensions:
+  - Color Dimension
+metrics:
+  - unique_name: Sales Amount - SUM
+relationships: []
