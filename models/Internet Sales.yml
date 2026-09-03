@@ -333,6 +333,8 @@ metrics:
   - unique_name: Tupple Expression Ratio
     folder: Complex Calcs
   - unique_name: Tupple Expression
+  - unique_name: Sales Amount Red or Black
+    folder: Complex Calcs
 perspectives:
   - unique_name: internet_sales_no_pii
     dimensions:

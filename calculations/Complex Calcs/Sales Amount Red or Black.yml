@@ -1,0 +1,13 @@
+unique_name: Sales Amount Red or Black
+object_type: metric_calc
+label: Sales Amount Red or Black
+description: >-
+  Sales Amount where Color is Red or Black. A SET of members within ONE
+  hierarchy, aggregated with SUM(set, measure) - not a tuple crossing two
+  hierarchies (which has been returning NULL/errors in every variant tested
+  today). This is the correct MDX shape for "IN (...)" filtering.
+expression: |-
+  SUM(
+    {[Color Dimension].[Color].[Color].&[Red], [Color Dimension].[Color].[Color].&[Black]},
+    [Measures].[salesamount1]
+  )
