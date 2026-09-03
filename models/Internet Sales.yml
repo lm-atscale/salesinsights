@@ -332,6 +332,7 @@ metrics:
     folder: Complex Calcs
   - unique_name: Tupple Expression Ratio
     folder: Complex Calcs
+  - unique_name: Tupple Expression
 perspectives:
   - unique_name: internet_sales_no_pii
     dimensions:
