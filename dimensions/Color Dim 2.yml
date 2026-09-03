@@ -3,14 +3,14 @@ object_type: dimension
 label: Color dim 2
 description: Color dim 2
 hierarchies:
-  - unique_name: Color
-    label: Color
+  - unique_name: Color2
+    label: Color2
     folder: Product Attributes
     levels:
-      - unique_name: Color
+      - unique_name: Color2
 is_degenerate: true
 level_attributes:
-  - unique_name: Color
+  - unique_name: Color2
     label: Color
     dataset: factinternetsales
     key_columns:
