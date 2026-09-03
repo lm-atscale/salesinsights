@@ -4,9 +4,12 @@ label: Complex Calc
 dimensions:
   - Color Dimension
   - Color2
+  - Color3
 metrics:
   - unique_name: Sales Amount - SUM
   - unique_name: Black and Red
   - unique_name: Black
   - unique_name: Red
+  - unique_name: Black 2
+  - unique_name: Black and Red2
 relationships: []

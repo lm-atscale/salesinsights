@@ -1,0 +1,18 @@
+unique_name: Color3
+object_type: dimension
+label: Color3
+hierarchies:
+  - unique_name: Color3_
+    label: Color3
+    levels:
+      - unique_name: Color3
+is_degenerate: true
+level_attributes:
+  - unique_name: Color3
+    label: Color3
+    contains_unique_names: false
+    dataset: factinternetsales
+    key_columns:
+      - Color3
+    name_column: Color3
+type: standard
